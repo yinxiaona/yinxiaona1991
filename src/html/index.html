@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../dist/css/index.css">
+	<link rel="stylesheet" href="../../src/scss/icon/iconfont.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta >
+</head>
+<body id='box'>
+	<!--index page-->
+	<div class="wrap">
+		<div class="banner swiper-container">
+			<ul class="swiper-wrapper">
+			</ul>
+			<span class="banner_title">酒店预订</span>
+		</div>
+		<div class="main-body">
+			<ul class="info">
+				<li><p  class="liveArea"><b class="dot icon iconfont icon-circle"></b><span>入住地</span><i class="one iconfont icon-jiantouzuo-copy"></i><b class="on curCity">广州</b></p><i class="ps"><i class='icon iconfont icon-address weizhi' ></i><i class="txt">我的位置</i></i></li>
+				<li class="selectTtime"><b class="dot icon iconfont icon-circle"></b><span >入住日</span><b class="currentData">7月16日</b><a href="javascript:;" class=" iconfont icon-jiantouzuo-copy" href="javascript:;"></a></li>
+				<li class="selectTtime"><b class="dot icon iconfont icon-circle"></b><span>住几晚 </span><b class="days">1晚</b><b class="checkout"><span></span></b></a></li>
+				<li><b class="dot icon iconfont icon-circle"></b><span>酒店名称</span><b><input type="text" placeholder="酒店名称 (选填)"></b></li>
+			</ul>
+		</div>
+
+		<div class="bottom">
+			<button id="search"><span class="icon iconfont icon-search"></span>搜索酒店</button>
+		</div>
+	<p id="mapholder"></p>
+	</div>
+	<div class="wrap city">
+			<header class="header common-header">
+				<span class="left icon iconfont icon-zuojiantou"></span>
+				<b>选择城市</b>
+				<span></span>
+			</header>
+			<div class="main-body">
+				<div class="current">
+					<p class="cur-title">当前</p>
+					<ul>
+						<li>广州市海珠区新港西路</li>
+						<li class='currentCity'><b class="curCity">广州</b><b class="check icon iconfont icon-checkbox-copy"></b></li>
+					</ul>
+				</div>
+
+				<div class="hot">
+					<p class="cur-title">热门</p>
+						<div class="cities">
+							<span>北京</span>
+							<span>广州</span>
+							<span>上海</span>
+							<span>青岛</span>
+							<span>南京</span>
+							<span>广州</span>
+
+						</div>
+				</div>
+			<div class="more">
+				<p class="cur-title">更多</p>
+					<div class="letter">
+
+					</div>
+			</div>
+
+			<div class="city-list">
+
+
+			</div>
+
+			</div>
+				<span class="back">返回顶部</span>
+
+		</div>
+	<!--end-->
+	<!--calendar page-->
+	 <div class="wrap calendar">
+			<header class="header common-header">
+				<span class="back left icon iconfont icon-zuojiantou"></span>
+				<b>343间酒店</b>
+				<span class="left finished">完成</span>
+			</header>
+
+				<div class="main-body">
+				<div class="date-title">
+				<span class="prev icon iconfont icon-zuojiantou"></span>
+				<b class="title"><i class="year">2014</i>年<i class="month">7</i>月</b>
+				<span class="next icon iconfont icon-jiantouzuo-copy"></span>
+				</div>
+					<div class="calendar_container">
+						<div class="week">
+						<span>周日</span>
+						<span>周一</span>
+						<span>周二</span>
+						<span>周三</span>
+						<span>周四</span>
+						<span>周五</span>
+						<span>周六</span>
+						</div>
+						<div class="calendar_list">
+
+						</div>
+					</div>
+
+			</div>
+
+			<div class="bottom_info">
+				<p><span>入住日</span><time class="currentTime"></time></p>
+				<p><span>住几晚</span><span class="input" ><b class="sub">-</b><input type="text" value='1' class="num"><b class="add">+</b></span></p>
+			</div>
+
+	</div>
+	<!--end-->
+	<script src="../../dist/js/index.js"></script>
+
+
+</body>
+</html>

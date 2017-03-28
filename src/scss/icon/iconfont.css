@@ -1,0 +1,41 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1490586243930'); /* IE9*/
+  src: url('iconfont.eot?t=1490586243930#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1490586243930') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1490586243930') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1490586243930#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before { content: "\e603"; }
+
+.icon-search:before { content: "\e60b"; }
+
+.icon-close:before { content: "\e608"; color:#C4C7D0;font-size:22px;}
+
+.icon-up:before { content: "\e614"; }
+
+.icon-p:before { content: "\e609"; }
+
+.icon-zuojiantou:before { content: "\e6c2"; }
+
+.icon-jiantouzuo-copy:before { content: "\e601"; color:#36AEEB; }
+
+.icon-tel:before { content: "\e606"; }
+
+.icon-address:before { content: "\e600";font-size:22px;}
+
+.icon-checkbox:before { content: "\e63c"; }
+
+.icon-circle:before { content: "\e6ee"; }
+
+.icon-checkbox-copy:before { content: "\e61e"; }
+

@@ -1,0 +1,288 @@
+@import 'reset';
+@import 'common';
+@import 'calendar';
+@import 'detail';
+@import 'order';
+$titlebgColor:#ccc;
+$base-color:#24aef2;
+$pcolor:#777;
+$dlborder:1px solid #DBDDE3;
+$scorecolor:#F99027;
+$checked: #24ADF1;
+span{
+	font-style:normal;
+}
+
+.search-hotel{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	background:#fff;
+	overflow:auto;
+    width: 100%;
+	transition:transform 0.3s ease-in;
+	&.showWrap{
+	transform:translate3d(0,0,0);
+	}
+	.content_list{
+	height:100%;
+	overflow-y: scroll;
+		.title_info{
+		width:100%;
+		height:35px;
+		line-height:35px;
+		position:absolute;
+		background:$titlebgColor;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+			span{
+			flex:1;
+			text-align:center;
+			height:35px;
+			line-height:35px;
+			font-size:1.4em;
+			flex:2;
+				&:last-child{
+				color:$base-color;
+				flex:1;
+				}
+				&.left{
+				color:$base-color;
+				margin-left:10px;
+				font-size:1.2em;
+				}
+			}
+		}
+
+
+
+
+	}
+	.hotel_bottom{
+	width:100%;
+	height:44px;
+	z-index:102;
+	line-height:44px;
+	display:flex;
+	position:absolute;
+	bottom:0;
+	left:0;
+	justify-content:space-between;
+	align-items:center;
+	border-top:1px solid $checked;
+	li{
+	border-left:1px solid #DDDCE2;
+	flex:1;
+	position:relative;
+	text-align:center;
+	&.on{
+	color: $checked;
+	}
+		&.active{
+		border-top:2px solid  $checked;
+		}
+	.up{
+	margin-left:5px;
+	font-size:1.2em;
+	}
+	}
+	background:#fff;
+	}
+
+	.active{
+	position:absolute;
+	width:25%;
+	height:2px;
+	transition:transform 0.2s ease-in;
+	background:$checked;
+	left:0;
+	top:0;
+	}
+
+}
+
+	.filter_items{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:100;
+	bottom:0px;
+	transform:translate3d(0,100%,0);
+	transition:transform 0.3s ease-in;
+	&.show{transform:translate3d(0,0,0)};
+	.layer{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.3);
+	}
+	.content{
+	width:100%;
+	position:absolute;
+	bottom:43px;
+	left:0;
+	background:#fff;
+	p{
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #ccc;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	span{
+	margin:0 10px;
+	}
+	&.checked{
+		color: $checked;
+	}
+	}
+
+	&>div{
+	display:none;
+	}
+	}
+
+	}
+
+.hide{
+	display:none;
+}
+
+//电话遮罩层
+
+.tel_page{
+	width:100%;
+	height:100%;
+	transform:translate3d(0,100%,0);
+	transition:transform .3s ease-in;
+	position:absolute;
+	&.show{
+	transform:translate3d(0,0,0);
+	}
+	left:0;
+	top:0;
+	z-index:300;
+	.tel_masker{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	}
+	.tel_info{
+	position:absolute;
+	bottom:0;
+	left:0;
+
+	width:100%;
+	.info{
+	background:#fff;
+	padding:10px 0;
+	p{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	p:last-child{
+	margin-bottom:20px;
+	}
+	}
+	}
+	.call{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	color:#F16355;
+	text-align:center;
+	border-top:1px solid #DDDCE1;
+	background:#fff;
+	}
+	.cancel{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	color:#177EE7;
+	text-align:center;
+	margin-top:10px;
+	background:#fff;
+	}
+	}
+}
+
+//付款页面
+
+.online{
+	width:100%;
+	height:100%;
+	font-size:16px;
+	position:absolute;
+	transform:translate3d(-100%,0,0);
+	&.show{
+	transform:translate3d(0,0,0);
+	}
+	left:0;
+	top:0;
+	input{
+	border:none;
+	height:100%;
+	background:#eee;
+	color:#000;
+	}
+	z-index:340;
+	background:#fff;
+	.balance{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	padding:0 10px;
+	border-top:1px solid #999;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+	.needpay{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	span{
+	font-size:22px;
+	}
+	}
+	.baida{
+	width:100%;
+	p{
+	height:46px;
+	line-height:44px;
+	padding:0 10px;
+	background:#eee;
+	color:#999;
+	&:first-child{
+	border-bottom:1px solid #fff;
+	}
+	}
+	}
+	.confirm{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background:#23AEF1;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+	color:#fff;
+	}
+	.show{
+	margin-top:40px;
+	text-align:center;
+	.btn{
+	width:80px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	float:right;
+	margin-right:60px;
+	}
+	}
+}

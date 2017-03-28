@@ -1,0 +1,97 @@
+$base-color:#24aef2;
+$whiteColor:#fff;
+$titlebgColor:#ccc;
+$border:1px solid #ccc;
+$calendarbg:#f5f6f5;
+//city css
+.city{
+	position:absolute;
+	top:0;
+
+	left:0;
+	z-index:99;
+	overflow:hidden;
+	background:$whiteColor;
+	transform:translate3d(100%,0,0);
+	transition:transform 0.3s ease-in;
+	&.show{
+	transform:translate3d(0,0,0);
+
+	}
+
+	.main-body{
+	height:100%;
+	overflow-y:scroll;
+		.current{
+		ul li{
+		height:30px;
+		padding:0 10px;
+		line-height:30px;
+			&:last-child{
+			border-top:$border;
+			color:$base-color;
+			.check{
+			float:right;
+			}
+			}
+		}
+		}
+
+		.hot{
+		height:110px;
+		width:100%;
+		.cities{
+			padding:10px 15px;
+			span{
+			display:block;
+			width:33.33%;
+			height:30px;
+			line-height:30px;
+			float:left;
+			text-align:center;
+			cursor:pointer;
+			}
+		}
+
+		}
+
+
+		.more{
+		height:135px;
+		width:100%;
+		.letter{
+		padding:10px 15px;
+		span{
+		display:block;
+		width:11.11%;
+		float:left;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		}
+		}
+		}
+
+		.city-list{
+		width:100%;
+			ol li{
+			height:30px;
+			line-height:30px;
+			padding-left:10px;
+			border-bottom:$border;
+			}
+		}
+	}
+	.back{
+	width:80px;
+	display:none;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	background:#999;
+	text-align:center;
+	color:#fff;
+	}
+}

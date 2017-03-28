@@ -1,0 +1,149 @@
+@import 'reset';
+@import 'swiper';
+@import 'common';
+@import 'hotel';
+@import 'city';
+@import 'calendar';
+$base-color:#24aef2;
+$whiteColor:#fff;
+$titlebgColor:#ccc;
+$border:1px solid #ccc;
+$calendarbg:#f5f6f5;
+.wrap{
+	font-size:62.5%;
+	font-family:'Microsoft yahei';
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.wrap .banner{
+	width:100%;
+	height:135px;
+	position:relative;
+	img{
+	height:100%;
+	width:100%;
+	}
+	.banner_title{
+	font-size:1.8em;
+	color:#fff;
+	position:absolute;
+	bottom:9px;
+	left:10px;
+	z-index:2;
+	}
+}
+
+.main-body{
+	width:100%;
+	.info{
+	width:100%;
+	border-bottom:1px solid #ccc;
+	padding-left:8px;
+	background:#fff;
+	b{
+	font-weight:normal;
+	}
+	.liveArea{
+	display:inline-block;
+	}
+		li{
+		height:70px;
+		line-height:70px;
+		border-top:1px solid #ccc;
+		padding-left:10px;
+			.dot{
+			color:#ccc;
+			font-size:1.4;
+			}
+			span{
+			margin-right:25px;
+			margin-left:10px;
+			color:#999;
+			font-size:1.5em;
+			}
+			b{
+			font-style:normal;
+			color:#333;
+			font-size:1.4em;
+			&.on{
+			color:$base-color;
+			}
+			}
+			a{
+			float:right;
+			margin-right:15px;
+		    color:$base-color;
+			}
+			&:last-child{
+			b{
+			height:100%;
+			display:inline-block;
+			input{
+			height:90%;
+			width:100%;
+			border:none;
+			outline:none;
+			}
+			}
+			}
+			&:nth-child(1){
+				.one{
+				right:80px;
+				position:absolute;
+				color:$base-color;
+				}
+			}
+		}
+		.ps{
+		width:70px;
+		height:100%;
+		font-size:1.4em;
+		color:$base-color;
+		border-left:1px solid #ccc;
+		float:right;
+		position:relative;
+		text-align:center;
+			a{
+				background-size: 100%;
+			    position: absolute;
+			    left: 28px;
+			    top: -6px;
+			    width:36px;
+			    height:40px;
+			}
+			.txt{
+			position:absolute;
+			 left: 10px;
+   			 top: 20px;
+   			 font-style:normal;
+			}
+
+		}
+	}
+}
+
+.bottom{
+	height:50px;
+	line-height:50px;
+	button{
+			width:100%;
+		height:50px;
+		background:$base-color;
+		color:#fff;
+		border:none;
+		font-size: 16px;
+	}
+	span{
+	margin-right:5px;
+	}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../src/scss/icon/iconfont.css">
+	<link rel="stylesheet" href="../../dist/css/index.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+</head>
+<body>
+
+	<div class="wrap search-hotel">
+	<header class="header common-header">
+		<span class="back left icon iconfont icon-zuojiantou"></span>
+		<b>343间酒店</b>
+		<span></span>
+	</header>
+<div class="content_list">
+	<div class="title_info">
+		<span class="currentData"></span>
+		<span class="checkout"></span>
+		<span class="modify">修改<span class="left icon iconfont icon-jiantouzuo-copy"></span></span>
+	</div>
+	<div class="hotel_list">
+
+	</div>
+
+	<ul class="hotel_bottom">
+		<li data-rank='start'><span>星级</span><span class="up icon iconfont icon-up "></span></li>
+		<li data-area='area'><span>区域</span><span class="icon iconfont "></span><span class="up icon iconfont icon-up "></span></li>
+		<li data-price='price'><span>价格</span><span class="icon iconfont "></span><span class="up icon iconfont icon-up "></span></li>
+		<li data-sort='sort'><span>排序</span><span class="icon iconfont "></span><span class="up icon iconfont icon-up "></span></li>
+		<b  class="active"></b>
+	</ul>
+			<!--遮罩层-->
+		 <div class="filter_items">
+		 	<div class="layer"></div>
+			 	<section class="content">
+				<div style="display:block;" class="rank">
+
+				<p data-rank='二星及以下/经济型'><span>二星以下/经济型</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-rank='三星'><span>三星</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-rank='四星'><span>四星</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-rank='五星'><span>五星</span><span class="icon iconfont icon-checkbox"></span></p>
+				</div>
+				<div class="region">
+
+				<p data-region='海淀区'><span>海淀区</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-region='朝阳区'><span>朝阳区</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-region='东城区'><span>东城区</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-region='西城区'><span>西城区</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-region='通州区'><span>通州区</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-region='大兴区'><span>大兴区</span><span class="icon iconfont icon-checkbox"></span></p>
+				</div>
+				<div class="price">
+
+				<p data-price='50-200'><span>50-200</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-price='200-400'><span>200-400</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-price='400-600'><span>400-600</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-price='600-1000'><span>600-1000</span><span class="icon iconfont icon-checkbox"></span></p>
+				</div>
+				<div class="sorts">
+				<p data-sort='price'><span>价格</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-sort='distance'><span>距离</span><span class="icon iconfont icon-checkbox"></span></p>
+				<p data-sort='ranks'><span>星级</span><span class="icon iconfont icon-checkbox"></span></p>
+				<!-- <p data-sort='不限'><span>不限</span><span class="icon iconfont icon-checkbox"></span></p> -->
+				</div>
+				</section>
+		</div>
+
+<!--遮罩层end-->
+
+</div>
+
+
+</div>
+	<!--calendar-->
+	<div class="wrap calendar">
+			<header class="header common-header">
+				<span class="back left icon iconfont icon-zuojiantou"></span>
+				<b>343间酒店</b>
+				<span class="left finished">完成</span>
+			</header>
+				<div class="main-body">
+				<div class="date-title">
+				<span class="prev icon iconfont icon-zuojiantou"></span>
+				<b class="title"><i class="year">2014</i>年<i class="month">7</i>月</b>
+				<span class="next icon iconfont icon-jiantouzuo-copy"></span>
+				</div>
+					<div class="calendar_container">
+						<div class="week">
+						<span>周日</span>
+						<span>周一</span>
+						<span>周二</span>
+						<span>周三</span>
+						<span>周四</span>
+						<span>周五</span>
+						<span>周六</span>
+						</div>
+						<div class="calendar_list">
+
+						</div>
+					</div>
+
+			</div>
+
+			<div class="bottom_info">
+				<p><span>入住日</span><time class="currentTime"></time></p>
+				<p><span>住几晚</span><span class="input" ><b class="sub">-</b><input type="text" value='1' class="num"><b class="add">+</b></span></p>
+			</div>
+
+		</div>
+	<!--end-->
+</div>
+<!--酒店详情页-->
+	<div class="hotel_detail">
+			<header class="header common-header">
+			<span class="back left icon iconfont icon-zuojiantou"></span>
+			<b>酒店详情</b>
+			<span></span>
+			</header>
+
+			<div class="banner_area">
+			<div class="banner">
+
+			<img src="../../src/img/main-ad.jpg" alt="">
+			</div>
+			<span class="checkImg">查看图集</span>
+			</div>
+
+		<!--基本信息-->
+		<div class="main_body">
+			<div class="base_info">
+			<ul class="list tab_list">
+				<li class="on">基本信息</li>
+				<li>酒店信息</li>
+			</ul>
+			<div class="tabs">
+			<div class="content">
+
+			</div>
+			</div>
+
+		</div>
+	<!--end-->
+	<!--标准房-->
+
+			<div class="stand_hotel">
+			<h2></h2>
+			<p class="date_info">
+			<span class="currentData"></span>
+			<span class="checkout"></span>
+			<span class="modify">修改<i class="icon iconfont icon iconfont icon-jiantouzuo-copy"></i></span>
+			</p>
+				<ul class="list book_area">
+					<li big-house='big'>
+						<span>
+						标准大床房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥320</span>
+						<span class="book_btn reserve" >预订</span>
+					</li>
+					<li big-house='small'>
+						<span>
+						标准房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥120</span>
+						<span class="book_btn out" >满房</span>
+					</li>
+					<li big-house='small'>
+						<span>
+						标准大床房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥320</span>
+						<span class="book_btn reserve" class="out">预订</span>
+						<span class="assure_sign">担保</span>
+					</li>
+					<li>
+						<span>
+						标准大床房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥320</span>
+						<span class="book_btn reserve" class="out">预订</span>
+					</li>
+					<li>
+						<span>
+						标准房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥120</span>
+						<span class="book_btn out" >满房</span>
+					</li>
+					<li>
+						<span>
+						标准大床房
+						<b>大床  无早</b>
+						</span>
+						<span class="price">￥320</span>
+						<span class="book_btn">预订</span>
+					</li>
+
+				</ul>
+				 <p class="surplus">展开剩余全部</p>
+			</div>
+		<!--end-->
+		<!--周边酒店-->
+<div class="hotel_list aside_hotel">
+	<p></p>
+	<h3>周边酒店</h3>
+		<dl class="list_item" hotel_id="1" rank="五星" region="海淀区" price="115" distance="780" ranks="5">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/427000/426277/bf2229fb79494258852488b0418c0575_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京京驻酒店式公寓</h2>
+				<p class="score"><span>4.7分</span><span>￥115<sub>起</sub></span></p>
+				<p>五星级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">八宝庄37号楼502室 地铁10号线西钓鱼台站(近定慧东街)</span><span class="distance">0.78km</span></address>
+			</dd>
+		</dl><dl class="list_item" hotel_id="2" rank="三星" region="海淀区" price="386" distance="660" ranks="3">
+			<dt><img src="http://dimg13.c-ctrip.com/images/hotel/430000/429454/bfaabdc90bf34e27bf38da73c652897f_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京中关村公馆(北京凯菱国际酒店)</h2>
+				<p class="score"><span>4.7分</span><span>￥386<sub>起</sub></span></p>
+				<p>三星级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区海淀中街16号(丹棱街海淀法院正南方,医院西北角)</span><span class="distance">0.66km</span></address>
+			</dd>
+		</dl><dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+		<dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+		<dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+
+		</div>
+		 <p class="surplus">展开剩余全部</p>
+		<!---->
+				<!--特价酒店-->
+		<div class="hotel_list aside_hotel">
+	<p></p>
+	<h3>特价酒店</h3>
+		<dl class="list_item" hotel_id="1" rank="五星" region="海淀区" price="115" distance="780" ranks="5">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/427000/426277/bf2229fb79494258852488b0418c0575_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京京驻酒店式公寓</h2>
+				<p class="score"><span>4.7分</span><span>￥115<sub>起</sub></span></p>
+				<p>五星级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">八宝庄37号楼502室 地铁10号线西钓鱼台站(近定慧东街)</span><span class="distance">0.78km</span></address>
+			</dd>
+		</dl><dl class="list_item" hotel_id="2" rank="三星" region="海淀区" price="386" distance="660" ranks="3">
+			<dt><img src="http://dimg13.c-ctrip.com/images/hotel/430000/429454/bfaabdc90bf34e27bf38da73c652897f_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京中关村公馆(北京凯菱国际酒店)</h2>
+				<p class="score"><span>4.7分</span><span>￥386<sub>起</sub></span></p>
+				<p>三星级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区海淀中街16号(丹棱街海淀法院正南方,医院西北角)</span><span class="distance">0.66km</span></address>
+			</dd>
+		</dl><dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+		<dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+		<dl class="list_item" hotel_id="3" rank="二星及以下/经济型" region="海淀区" price="108" distance="1950" ranks="0">
+			<dt><img src="http://dimg11.c-ctrip.com/images/hotel/72000/71783/aac7d7c18fa243989344873453425103_R_130_130.jpg" alt=""></dt>
+			<dd>
+				<h2>北京鹏飞快捷宾馆</h2>
+				<p class="score"><span>4.7分</span><span>￥108<sub>起</sub></span></p>
+				<p>二星及以下/经济型级<span class="icon iconfont icon-wifi"></span><span class="park icon iconfont icon-p"></span></p>
+				<address><span class="address">海淀区宝盛西里3号1层1号</span><span class="distance">1.95km</span></address>
+			</dd>
+		</dl>
+
+		</div>
+		 <p class="surplus">展开剩余全部</p>
+		 <!--end-->
+	</div>
+</div>
+		<!--calendar-->
+	<div class="wrap calendar">
+			<header class="header common-header calender_header">
+				<span class="back left icon iconfont icon-zuojiantou"></span>
+				<b>343间酒店</b>
+				<span class="left finished">完成</span>
+			</header>
+				<div class="main-body">
+				<div class="date-title">
+				<span class="prev icon iconfont icon-zuojiantou"></span>
+				<b class="title"><i class="year">2014</i>年<i class="month">7</i>月</b>
+				<span class="next icon iconfont icon-jiantouzuo-copy"></span>
+				</div>
+					<div class="calendar_container">
+						<div class="week">
+						<span>周日</span>
+						<span>周一</span>
+						<span>周二</span>
+						<span>周三</span>
+						<span>周四</span>
+						<span>周五</span>
+						<span>周六</span>
+						</div>
+						<div class="calendar_list">
+
+						</div>
+					</div>
+
+			</div>
+
+			<div class="bottom_info">
+				<p><span>入住日</span><time class="currentTime"></time></p>
+				<p><span>住几晚</span><span class="input" ><b class="sub">-</b><input type="text" value='1' class="num"><b class="add">+</b></span></p>
+			</div>
+
+		</div>
+	<!--end-->
+
+
+	<!--详情页-->
+	<div class="masker_layer">
+			<div class="masker"></div>
+			<header class="header common-header">
+			<span class="back left icon iconfont icon-zuojiantou"></span>
+			<b>酒店详情</b>
+			<span></span>
+			</header>
+			<div class="info_page">
+				<dl>
+					<dt><img src="../../src/img/main-ad.jpg" alt="">
+					</dt>
+					<dd>
+						<h4>标准大床房</h4>
+						<p>￥320</p>
+						<p class="assure_area"></p>
+					</dd>
+					<span class="close">×</span>
+				</dl>
+				<ul>
+					<li ><span class="icon iconfont icon-circle"></span>面积<span>12m2</span></li>
+					<li><span class="icon iconfont icon-circle"></span>可住<span>1人</span></li>
+					<li ><span class="icon iconfont icon-circle"></span>床型<span>单人床1.2米,1张</span></li>
+					<li ><span class="icon iconfont icon-circle"></span>宽带<span>无</span></li>
+					<li ><span class="icon iconfont icon-circle"></span>提供<span>免费早餐</span></li>
+
+
+				</ul>
+				<div class="btn">立即预订</div>
+			</div>
+
+	</div>
+	<!---->
+	<!--查看图集图层-->
+		<div class="img_layer">
+			<div class="layer"></div>
+			<div class="imgs">
+			<ul>
+			<li class="on"> <img src="https://ofmw931zf.qnssl.com//portal/index_top_banner1.jpg"></li>
+			<li > <img src="https://ofmw931zf.qnssl.com//portal/index_top_banner2.jpg"></li>
+			<li> <img src="https://ofmw931zf.qnssl.com//portal/index_top_banner3.jpg"></li>
+			<li> <img src="https://ofmw931zf.qnssl.com//portal/index_top_banner1.jpg"></li>
+			<li> <img src="https://ofmw931zf.qnssl.com//portal/index_top_banner2.jpg"></li>
+			</ul>
+
+			</div>
+		</div>
+<!---->
+<!--订单页面-->
+	<div class="wrap order">
+		<header class="header common-header">
+		<span class="back left icon iconfont icon-zuojiantou"></span>
+		<b>订单填写</b>
+		<span></span>
+		</header>
+		<div class="main_body">
+			<div class="hotel_info">
+				<dl>
+					<dt><img src="../../src/img/main-ad.jpg" alt=""></dt>
+					<dd>
+						<h3>北京王府井希尔顿酒店</h3>
+						<h3>标准大床房</h3>
+						<p><span>￥320</span><span>担保</span></p>
+					</dd>
+				</dl>
+				<div class="date_info">
+					<p><span class="ordercheckin">入住 7月8日</span>
+					<span class="ordercheckout">离店 7月8日</span></p>
+				</div>
+			</div>
+			<div class="collect_info">
+				<div class="info info_1">
+					<h3>房间信息</h3>
+					<p class="line">房间数量<span>1</span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+					<p>到店时间<span>1</span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+				</div>
+					<div class="info info_1">
+					<h3>入住人信息</h3>
+					<p class="line">姓名<span><input type="text" placeholder="每个房间只需填写一个姓名"></span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+					<p>证件<span><input type="text" placeholder="入住人身份证号/护照号"></span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+				</div>
+					<div class="info info_1">
+					<h3>联系人信息</h3>
+					<p class="line">姓名<span><input type="text" placeholder="联系人姓名"></span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+					<p>手机<span><input type="text" placeholder="用于接收通知短信"></span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+				</div>
+			</div>
+			<div class="alert_info">
+				<span>温馨提示</span>
+				<div>
+					当前房间紧张，需冻结您的信用卡金额90元用于担保订单，如订单不确定我们将立刻进行解冻，该订单确认后不可被取消修改，若未入住或取消修改，担保费用将不予退换
+				</div>
+			</div>
+			<div class="submit_area">
+				<span class="money">担保交易:￥90</span>
+				<span class="book">立即预订</span>
+			</div>
+		</div>
+	</div>
+<!---->
+<!--如果存在担保 担保交易页面-->
+	<div class="wrap assure">
+		<header class="header common-header">
+		<span class="back left icon iconfont icon-zuojiantou"></span>
+		<b>担保交易</b>
+		<span></span>
+		</header>
+		<div class="main_body">
+			<div class="hotel_info">
+				<dl>
+					<dt><img src="../../src/img/main-ad.jpg" alt=""></dt>
+					<dd>
+						<h3>北京王府井希尔顿酒店</h3>
+						<h3>标准大床房</h3>
+						<p><span>￥90</span><span>担保</span></p>
+					</dd>
+				</dl>
+			</div>
+			<div class="collect_info">
+				<div class="info info_1">
+					<h3>卡信息</h3>
+				<p class="line">发卡银行<span>工商银行</span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+				<p class="line">卡号<span><input type="text" value='343423423432432432'></span><span class="icon iconfont icon-close"></span></p>
+				<p class="line">卡有效期<span><input type="text" placeholder="月份/年份"></span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+				<p>卡验证码<span><input type="text" placeholder="签名栏末尾最后三位"></span></p>
+				</div>
+					<div class="info info_1">
+					<h3>持卡人信息</h3>
+						<p class="line">持卡人姓名姓名<span><input type="text" placeholder="填写姓名"></span></p>
+					<p  class="line">证件类型<span>身份证</span><span class="icon iconfont icon-jiantouzuo-copy"></span></p>
+					<p>证件号码<span><input type="text" placeholder="填写证件号码"></span><span class="icon iconfont icon-close"></span></p>
+				</div>
+
+			</div>
+			<div class="alert_info">
+				<span>支付安全承诺</span>
+				<div>
+					当前房间紧张，需冻结您的信用卡金额90元用于担保订单，如订单不确定我们将立刻进行解冻，该订单确认后不可被取消修改，若未入住或取消修改，担保费用将不予退换
+				</div>
+				<span>罚金细则</span>
+				<div>
+这里显示各种罚金细则。无则取消
+				</div>
+			</div>
+			<div class="submit_area">
+				<span class="money">担保交易:￥90</span>
+				<span class="book">确认担保</span>
+			</div>
+		</div>
+	</div>
+	<!---->
+	<div class="tel_page">
+		<div class="tel_masker">
+
+		</div>
+		<div class="tel_info">
+			<div class="info">
+			<p>拨打商户电话</p>
+			<p>020-837548454</p>
+			</div>
+
+			<div class="call">呼叫</div>
+			<div class="cancel">取消</div>
+		</div>
+
+
+	</div>
+	<!---->
+	<!--付款页面-->
+	<div class="wrap online">
+		<header class="header common-header">
+		<span class="back left icon iconfont icon-zuojiantou"></span>
+		<b>在线支付</b>
+		<span></span>
+		</header>
+	<p class="balance"><span>当前余额</span><span>1000</span></p>
+	<div class="needpay">
+		需付<span>80元</span>
+	</div>
+		<div class="baida">
+			<p><span>使用百搭币</span><input type="text" value="1000">1元=20百搭币</p>
+			<p><span>现金支付</span><input type="text" value="1000">元</p>
+		</div>
+		<p class="show">
+		<span>百搭币余额不足? 请</span><span class="btn">获得百搭币</span>
+		</p>
+
+	<div class="confirm">
+	确认付款
+	</div>
+
+	</div>
+	<!---->
+<!---->
+</body>
+
+<script src="../../dist/js/hotel.js"></script>
+</html>

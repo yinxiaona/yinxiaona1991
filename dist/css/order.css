@@ -1,0 +1,356 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+textarea,
+button {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+a,
+textarea,
+input,
+button,
+span,
+em,
+strong,
+img,
+div {
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  tap-highlight-color: transparent; }
+
+input,
+textarea,
+button {
+  outline: 0 none; }
+
+textarea {
+  resize: none; }
+
+span {
+  font-style: normal; }
+
+img {
+  border: none; }
+
+i {
+  font-style: normal; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WEIRUANYAHEI", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  font: 0/0;
+  display: table;
+  clear: both;
+  zoom: 1; }
+
+/*# sourceMappingURL=reset.scss.map */
+.common-header {
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  line-height: 44px;
+  font-size: 62.5%;
+  padding: 0 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .common-header .left {
+    color: #24aef2; }
+  .common-header span, .common-header b {
+    flex: 1; }
+  .common-header b {
+    text-align: center; }
+  .common-header .finished {
+    text-align: right; }
+
+.cur-title {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  background: #ccc;
+  padding-left: 10px; }
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 120; }
+  .loading .loading-img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    animation: loading .5s linear infinite; }
+    .loading .loading-img .circle {
+      width: 10px;
+      position: absolute;
+      height: 10px;
+      float: left;
+      background: #fff;
+      border-radius: 100%;
+      margin-right: 10px;
+      transform-origin: 30px 30px; }
+    .loading .loading-img .circle1 {
+      transform: rotate(60deg); }
+    .loading .loading-img .circle2 {
+      transform: rotate(120deg); }
+    .loading .loading-img .circle3 {
+      transform: rotate(180deg); }
+    .loading .loading-img .circle4 {
+      transform: rotate(240deg); }
+    .loading .loading-img .circle5 {
+      transform: rotate(300deg); }
+    .loading .loading-img .circle6 {
+      transform: rotate(360deg); }
+
+@keyframes loading {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(36deg); } }
+
+.none {
+  display: none; }
+
+.show {
+  display: block; }
+
+.hotel_list {
+  width: 100%;
+  font-size: 62.5%;
+  padding-top: 35px;
+  padding-bottom: 88px; }
+  .hotel_list .list_item {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #DBDDE3; }
+    .hotel_list .list_item dt {
+      width: 70px;
+      height: 70px;
+      float: left;
+      margin-right: 10px; }
+      .hotel_list .list_item dt img {
+        width: 100%;
+        height: 100%; }
+    .hotel_list .list_item dd {
+      flex: 1;
+      margin-left: 10px;
+      color: #777;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .hotel_list .list_item dd h2, .hotel_list .list_item dd p, .hotel_list .list_item dd address {
+        font-size: 1.2em; }
+      .hotel_list .list_item dd .address {
+        float: left;
+        width: 75%;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-right: 10px; }
+      .hotel_list .list_item dd h2 {
+        color: #000;
+        font-size: 1.4em; }
+    .hotel_list .list_item .distance {
+      float: right;
+      display: block;
+      width: 20%; }
+    .hotel_list .list_item .score {
+      color: #F99027;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .hotel_list .list_item .score sub {
+        color: #777;
+        font-weight: normal;
+        margin-left: 5px; }
+    .hotel_list .list_item .park {
+      font-size: 1em; }
+
+.order, .assure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 320;
+  transform: translate3d(100%, 0, 0);
+  top: 0;
+  left: 0;
+  overflow: auto;
+  font-family: 'weiruanyahei'; }
+  .order.show, .assure.show {
+    transform: translate3d(0, 0, 0); }
+  .order .common-header, .assure .common-header {
+    border-bottom: 1px solid #ccc; }
+    .order .common-header b, .order .common-header span, .assure .common-header b, .assure .common-header span {
+      font-size: 16px; }
+  .order .main_body, .assure .main_body {
+    width: 100%;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 44px; }
+    .order .main_body .hotel_info, .assure .main_body .hotel_info {
+      width: 100%;
+      background: #fff; }
+      .order .main_body .hotel_info dl, .assure .main_body .hotel_info dl {
+        height: 100px;
+        display: flex;
+        padding: 10px; }
+        .order .main_body .hotel_info dl dt, .assure .main_body .hotel_info dl dt {
+          width: 70px;
+          height: 70px;
+          margin-right: 10px; }
+          .order .main_body .hotel_info dl dt img, .assure .main_body .hotel_info dl dt img {
+            width: 100%;
+            height: 100%; }
+        .order .main_body .hotel_info dl dd, .assure .main_body .hotel_info dl dd {
+          flex: 1; }
+          .order .main_body .hotel_info dl dd h3, .assure .main_body .hotel_info dl dd h3 {
+            margin-bottom: 5px; }
+          .order .main_body .hotel_info dl dd p span, .assure .main_body .hotel_info dl dd p span {
+            color: #EF942B;
+            margin-right: 10px; }
+      .order .main_body .hotel_info .date_info, .assure .main_body .hotel_info .date_info {
+        width: 100%;
+        padding: 0 10px;
+        height: 40px; }
+        .order .main_body .hotel_info .date_info p, .assure .main_body .hotel_info .date_info p {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 40px;
+          width: 100%;
+          border-top: 1px solid #ccc; }
+          .order .main_body .hotel_info .date_info p span, .assure .main_body .hotel_info .date_info p span {
+            flex: 1;
+            text-align: center; }
+            .order .main_body .hotel_info .date_info p span:first-child, .assure .main_body .hotel_info .date_info p span:first-child {
+              border-right: 1px solid #ccc; }
+    .order .main_body .collect_info, .assure .main_body .collect_info {
+      width: 100%; }
+      .order .main_body .collect_info .info, .assure .main_body .collect_info .info {
+        width: 100%;
+        background: #fff; }
+        .order .main_body .collect_info .info h3, .assure .main_body .collect_info .info h3 {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 10px;
+          background: #eee;
+          color: #999999; }
+        .order .main_body .collect_info .info p, .assure .main_body .collect_info .info p {
+          padding: 0 10px;
+          background: #fff;
+          height: 40px;
+          line-height: 40px;
+          display: flex;
+          justify-content: space-between; }
+          .order .main_body .collect_info .info p span:first-child, .assure .main_body .collect_info .info p span:first-child {
+            flex: 4;
+            text-align: right;
+            margin-right: 10px; }
+            .order .main_body .collect_info .info p span:first-child input, .assure .main_body .collect_info .info p span:first-child input {
+              width: 100%;
+              height: 38px;
+              padding-left: 30px;
+              line-height: 40px;
+              outline: none;
+              border: none; }
+          .order .main_body .collect_info .info p .right_row, .assure .main_body .collect_info .info p .right_row {
+            color: #5CC3EE; }
+        .order .main_body .collect_info .info .line, .assure .main_body .collect_info .info .line {
+          border-bottom: 1px solid #ccc; }
+  .order .alert_info, .assure .alert_info {
+    width: 100%;
+    padding: 10px;
+    background: #eee;
+    font-size: 12px; }
+    .order .alert_info span, .assure .alert_info span {
+      color: #ED4B3E;
+      display: block;
+      margin: 10px 0;
+      font-size: 14px; }
+  .order .submit_area, .assure .submit_area {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    display: flex;
+    color: #fff; }
+    .order .submit_area span, .assure .submit_area span {
+      text-align: center; }
+    .order .submit_area .money, .assure .submit_area .money {
+      background: #174990;
+      flex: 2; }
+    .order .submit_area .book, .assure .submit_area .book {
+      background: #23AEF1;
+      flex: 1; }
+
+.assure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(100%, 0, 0);
+  z-index: 320; }
+  .assure.show {
+    transform: translate3d(0, 0, 0); }
+  .assure .main_body .collect_info .info p span:first-child {
+    text-align: left;
+    padding-left: 5px; }
